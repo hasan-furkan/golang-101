@@ -1,5 +1,14 @@
 package main
 
+import "fmt"
+
+func main() {
+	a := [6]int{2, 3, 5, 6, 7, 9}
+	fmt.Println(a)       //Çıktımız: [2 3 5 6 7 9]
+	var b []int = a[2:4] //Dilimleme işlemi
+	fmt.Println(b)       //Çıktımız: [5 6]
+}
+
 // func main() {
 // 	fmt.Printf("hello world")
 // }
@@ -70,10 +79,6 @@ package main
 // 	*v += 5
 // }
 
-func main() {
-
-}
-
 // ---------------------- struct  -------------------
 
 // type user struct {
@@ -117,3 +122,12 @@ func main() {
 
 // user1 := user{"hasan", "furkan", 21}
 // 	user1.meeting()
+
+// ------------- Arrays -------------
+
+// var a [3]string
+// a[0] = "Ayşe"     //Birinci değer
+// a[1] = "Fatma"    //İkinci değer
+// a[2] = "Hayriye"  //Üçüncü değer
+// fmt.Println(a)    //Çıktımız: [Ayşe Fatma Hayriye]
+// fmt.Println(a[1]) //Çıktımız: Fatma
