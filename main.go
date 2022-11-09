@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // func main() {
 // 	fmt.Printf("hello world")
 // }
@@ -72,26 +70,50 @@ import "fmt"
 // 	*v += 5
 // }
 
-type user struct {
-	name    string
-	surname string
-	age     int
-}
-
 func main() {
 
-	// user1 := user{"hasan furkan", "koprulu", 21}
-	// user1.name = "ihsan"
-	// user1.surname = "cetin"
-	// user1.age = 55
-	// fmt.Println(user1)
-
-	// user1 := user{}
-	// user1.name = "hasan"
-	// user1.surname = "furkan"
-	// user1.name, user1.surname = "hasan furkan", "koprulu"
-	// user1.age = 21
-
-	user1 := user{age: 21, surname: "koprulu"}
-	fmt.Println(user1)
 }
+
+// ---------------------- struct  -------------------
+
+// type user struct {
+// 	name    string
+// 	surname string
+// 	age     int
+// }
+
+// user1 := user{"hasan furkan", "koprulu", 21}
+// user1.name = "ihsan"
+// user1.surname = "cetin"
+// user1.age = 55
+// fmt.Println(user1)
+
+// user1 := user{}
+// user1.name = "hasan"
+// user1.surname = "furkan"
+// user1.name, user1.surname = "hasan furkan", "koprulu"
+// user1.age = 21
+
+// user1 := user{age: 21, surname: "koprulu"}
+// fmt.Println(user1)
+
+// -------------------- anonim struct ------------
+// user := struct {
+// 	name, surname string
+// }{"hasan", "furkan"}
+
+// fmt.Println(user)
+
+// ------------------ function struct ----------------
+
+// type user struct {
+// 	name, surname string
+// 	age           int
+// }
+
+// func (i user) meeting() {
+// 	fmt.Printf("Merhaba, Ben %s %s %d yaşındayım.", i.name, i.surname, i.age)
+// }
+
+// user1 := user{"hasan", "furkan", 21}
+// 	user1.meeting()
